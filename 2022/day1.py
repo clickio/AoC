@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+#part1
 value_dict = defaultdict(list)
 index = 0
 with open('input_1_dec.txt') as f:
@@ -12,6 +14,7 @@ for k, v in value_dict.items():
     sums_dict[k] = sum(v)
 print(max(sums_dict.values()))
 
+#part2
 for k, v in value_dict.items():
     sums_dict[k] = sum(v)
 count = 0
