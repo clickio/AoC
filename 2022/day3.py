@@ -9,10 +9,12 @@ def get_priority(item):
     return priority
 
 #part1
+list_of_rucksacks = []
 sum_of_priorities1 = 0
 with open('3dec2022.txt') as f:
     for row in f.readlines():
         row = row.strip()
+        list_of_rucksacks.append(row)
         threshold = len(row)// 2
         first_half, sec_half = row[:threshold], row[threshold:]
         sum_of_priorities1 += get_priority(get_common_item([first_half, sec_half]))
@@ -20,12 +22,7 @@ with open('3dec2022.txt') as f:
 print(sum_of_priorities1)
 
 #part2
-list_of_rucksacks = []
 sum_of_priorities2 = 0
-with open('3dec2022.txt') as f:
-    for row in f.readlines():
-        list_of_rucksacks.append(row.strip())
-
 for i in range(0, len(list_of_rucksacks), 3):
     group =list_of_rucksacks[i:i+3]
     sum_of_priorities2 += get_priority(get_common_item(group))
