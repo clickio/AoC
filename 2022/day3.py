@@ -10,7 +10,7 @@ def get_priority(item):
 
 #part1
 sum_of_priorities1 = 0
-with open('./sda/aoc/3dec2022.txt') as f:
+with open('3dec2022.txt') as f:
     for row in f.readlines():
         row = row.strip()
         threshold = len(row)// 2
@@ -22,7 +22,7 @@ print(sum_of_priorities1)
 #part2
 list_of_rucksacks = []
 sum_of_priorities2 = 0
-with open('./sda/aoc/3dec2022.txt') as f:
+with open('3dec2022.txt') as f:
     for row in f.readlines():
         list_of_rucksacks.append(row.strip())
 
