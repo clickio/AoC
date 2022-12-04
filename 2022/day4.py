@@ -21,7 +21,6 @@ with open('4dec2022.txt') as f:
     for row in f.readlines():
         truth = containing_checker1(row.strip())
         truth_list.append(truth)
-        #print(row, truth, "\n")
 print(sum(truth_list))
 
 #part2
