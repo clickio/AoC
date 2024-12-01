@@ -10,7 +10,7 @@ with open('./inputs/day1_input.txt') as f:
 right_list.sort()
 left_list.sort()
 total_distance = 0
-for i in range(0, 1000):
+for i in range(0, len(left_list)):
     row_distance = abs(right_list[i] - left_list[i])
     total_distance += row_distance
 print(total_distance)
