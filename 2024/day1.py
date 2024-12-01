@@ -4,7 +4,7 @@ left_list = []
 right_list = []
 with open('./inputs/day1_input.txt') as f:
     for row in f.readlines():
-        n1, n2 = row.split("   ")
+        n1, n2 = row.split()
         left_list.append(int(n1))
         right_list.append(int(n2))
 right_list.sort()
