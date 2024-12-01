@@ -16,7 +16,7 @@ for i in range(0, 1000):
 print(total_distance)
 
 #part2
-zeros_list = [0] * 10000
+zeros_list = [0] * len(left_list)
 sim_score_dict = dict(zip(left_list, zeros_list))
 for a in left_list:
     for b in right_list:
